@@ -74,7 +74,7 @@ const Bio = () => {
           <a href={resume} target="_blank" rel="noopener noreferrer">
             here
           </a>{' '}
-          and some of my past projects are avaliable{' '}
+          and some of my past projects are available{' '}
           <a
             href="https://github.com/rzgry"
             target="_blank"
