@@ -73,7 +73,7 @@ const Bio = () => {
           <OutboundLink href={resume} target="_blank" rel="noopener noreferrer">
             here
           </OutboundLink>{' '}
-          and some of my past projects are avaliable{' '}
+          and some of my past projects are available{' '}
           <OutboundLink
             href="https://github.com/rzgry"
             target="_blank"
