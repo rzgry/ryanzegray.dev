@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const StyledFooter = styled.footer`
   text-align: right;
@@ -47,23 +48,23 @@ const Footer = () => (
         {', '}
         <span style={{ whiteSpace: 'nowrap' }}>
           Built with{' '}
-          <a
+          <OutboundLink
             href="https://www.gatsbyjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
             GatsbyJS
-          </a>
+          </OutboundLink>
         </span>{' '}
         <span style={{ whiteSpace: 'nowrap' }}>
           and{' '}
-          <a
+          <OutboundLink
             href="https://www.styled-components.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Styled Components
-          </a>
+          </OutboundLink>
         </span>
       </FooterText>
     </FooterContainer>

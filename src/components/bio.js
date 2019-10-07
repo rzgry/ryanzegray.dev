@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import resume from '../images/resume.pdf';
 
@@ -47,9 +48,7 @@ const Bio = () => {
         <Image
           fixed={data.img.childImageSharp.fixed}
           alt={data.site.siteMetadata.author}
-          imgStyle={{
-            borderRadius: '50%',
-          }}
+          imgStyle={{ borderRadius: '50%' }}
         />
       </BioImgWrapper>
       <BioTextWrapper>
@@ -59,29 +58,29 @@ const Bio = () => {
             👋
           </span>
           . I am a Software Developer at IBM currently working on{' '}
-          <a
-            href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson"
+          <OutboundLink
+            href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about"
             target="_blank"
             rel="noopener noreferrer"
           >
             Voice Agent with Watson
-          </a>{' '}
+          </OutboundLink>{' '}
           for IBM Cloud. I graduated in April of 2019 with a degree in computer
           science from Western University.
         </p>
         <p>
           You can find my resume{' '}
-          <a href={resume} target="_blank" rel="noopener noreferrer">
+          <OutboundLink href={resume} target="_blank" rel="noopener noreferrer">
             here
-          </a>{' '}
+          </OutboundLink>{' '}
           and some of my past projects are avaliable{' '}
-          <a
+          <OutboundLink
             href="https://github.com/rzgry"
             target="_blank"
             rel="noopener noreferrer"
           >
             here
-          </a>
+          </OutboundLink>
           .
         </p>
       </BioTextWrapper>

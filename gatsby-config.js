@@ -3,7 +3,7 @@ const googleTrackingId = process.env.google_analytics_tracking_id;
 module.exports = {
   siteMetadata: {
     title: 'Ryan Zegray',
-    description: 'Ryan Zegray Software Developer',
+    description: 'Ryan Zegray Software Developer experienced with JavaScript, Python, Java, Node.js, React.js, HTML, CSS and SQL / NoSQL databases.',
     author: 'Ryan Zegray',
   },
   plugins: [
