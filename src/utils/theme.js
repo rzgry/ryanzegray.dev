@@ -1,13 +1,20 @@
-// theme used with typography js and styled components
-// color reference - https://coolors.co/3b3f47-8aa399-f2f2f2-7d84b2-7688a7
+const DARK_YELLOW = 'rgb(255, 195, 13)';
+const LIGHT_YELLOW = 'rgb(255, 210, 78)';
+const OFF_WHITE = '#F5F5F5';
+const DARK_GRAY = 'rgb(41, 47, 53)';
+
 const theme = {
   maxContentWidth: '900px',
-  background: '#F2F2F2',
-  primaryText: '#8297B9',
-  secondaryText: '#3B3F47',
-  link: '#7688A7',
-  linkHover: '#B4C3DC',
-  footerBackground: '#8aa399',
+  background: DARK_GRAY,
+  primaryText: DARK_YELLOW,
+  secondaryText: OFF_WHITE,
+  link: LIGHT_YELLOW,
+  footerBackground: OFF_WHITE,
+  buttonColor: LIGHT_YELLOW,
+  buttonHover: DARK_YELLOW,
+  buttonActive: DARK_YELLOW,
+  lightText: OFF_WHITE,
+  darkText: DARK_GRAY,
 };
 
 export default theme;

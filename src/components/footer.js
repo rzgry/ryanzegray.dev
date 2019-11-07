@@ -30,11 +30,11 @@ const FooterContainer = styled.div`
 const FooterText = styled.p`
   color: ${props => props.theme.background};
   a {
-    box-shadow: inset 0 -2px 0 0 ${props => props.theme.secondaryText};
-    color: ${props => props.theme.secondaryText};
+    box-shadow: inset 0 -2px 0 0 ${props => props.theme.primaryText};
+    color: ${props => props.theme.background};
   }
   a:hover {
-    box-shadow: inset 0 -50px 0 0 ${props => props.theme.secondaryText};
+    box-shadow: inset 0 -50px 0 0 ${props => props.theme.primaryText};
     color: ${props => props.theme.background};
   }
   margin-top: 0.5rem;
