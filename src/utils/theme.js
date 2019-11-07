@@ -1,6 +1,6 @@
 const DARK_YELLOW = 'rgb(255, 195, 13)';
 const LIGHT_YELLOW = 'rgb(255, 210, 78)';
-const OFF_WHITE = '#F5F5F5';
+const OFF_WHITE = '#f0f0f0';
 const DARK_GRAY = 'rgb(41, 47, 53)';
 
 const theme = {
