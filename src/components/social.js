@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-
 const socialLinks = [
   {
     text: 'Email',
     href: 'mailto:ryan.zegray@gmail.com',
+  },
+  {
+    text: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/ryan-zegray/',
+    target: '_blank',
+    rel: 'noopener noreferrer',
   },
   {
     text: 'GitHub',
@@ -15,15 +20,15 @@ const socialLinks = [
     rel: 'noopener noreferrer',
   },
   {
-    text: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ryan-zegray/',
+    text: 'CodeSandbox',
+    href: 'https://codesandbox.io/u/rzgry/',
     target: '_blank',
     rel: 'noopener noreferrer',
   },
 ];
 
 const SocialListItem = styled.li`
-  display: inline;
+  display: inline-block;
   margin-right: 1rem;
   :last-child {
     margin-right: 0;
