@@ -2,6 +2,7 @@ const googleTrackingId = process.env.google_analytics_tracking_id;
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://ryanzegray.dev', // used-by- gatsby to generate robots.txt / sitemap.xml
     title: 'Ryan Zegray',
     description:
       'Ryan Zegray Software Developer experienced with JavaScript, Python, Java, Node.js, React.js, HTML, CSS and SQL / NoSQL databases.',
@@ -43,5 +44,7 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
   ],
 };
