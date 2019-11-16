@@ -1,0 +1,14 @@
+# redirect requests for resume to firebase cloud storage bucket
+[[redirects]]
+  from = "/resume*"
+  to = "https://firebasestorage.googleapis.com/v0/b/assets-ryanzegray-dev.appspot.com/o/Resume%20Ryan%20Zegray.pdf?alt=media"
+
+[[redirects]]
+  from = "/static/resume*"
+  to = "https://firebasestorage.googleapis.com/v0/b/assets-ryanzegray-dev.appspot.com/o/Resume%20Ryan%20Zegray.pdf?alt=media"
+
+# SPA Redirect for client side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

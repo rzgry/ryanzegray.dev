@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
-import resume from '../images/resume.pdf';
-
 const BioWrapper = styled.div`
   @media (min-width: 500px) {
     display: flex;
@@ -48,7 +46,10 @@ const Bio = () => {
         <Image
           fixed={data.img.childImageSharp.fixed}
           alt={data.site.siteMetadata.author}
-          imgStyle={{ borderRadius: '50%' }}
+          imgStyle={{
+            borderRadius: '50%',
+            border: '2px #f0f0f0 solid',
+          }}
         />
       </BioImgWrapper>
       <BioTextWrapper>
@@ -70,7 +71,13 @@ const Bio = () => {
         </p>
         <p>
           You can find my resume{' '}
-          <OutboundLink href={resume} target="_blank" rel="noopener noreferrer">
+          <OutboundLink
+            // Netlify redirects send this to firebase cloud storage bucket
+            // See netlify.toml
+            href="/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             here
           </OutboundLink>{' '}
           and some of my past projects are available{' '}
