@@ -9,11 +9,5 @@
       }
     ]
   },
-  // "globals": {
-  //   "window": true,
-  //   "document": true,
-  //   "localStorage": true,
-  //   "navigator": true
-  // },
   "parser": "babel-eslint"
 }

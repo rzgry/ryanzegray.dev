@@ -1,11 +1,11 @@
 const DARK_YELLOW = 'rgb(255, 195, 13)';
 const LIGHT_YELLOW = 'rgb(255, 210, 78)';
 const OFF_WHITE = '#f0f0f0';
-const DARK_GRAY = 'rgb(41, 47, 53)';
+const DARK_BG = '#0f0e17';
 
 const theme = {
   maxContentWidth: '900px',
-  background: DARK_GRAY,
+  background: DARK_BG,
   primaryText: DARK_YELLOW,
   secondaryText: OFF_WHITE,
   link: LIGHT_YELLOW,
@@ -14,7 +14,7 @@ const theme = {
   buttonHover: DARK_YELLOW,
   buttonActive: DARK_YELLOW,
   lightText: OFF_WHITE,
-  darkText: DARK_GRAY,
+  darkText: DARK_BG,
 };
 
 export default theme;
