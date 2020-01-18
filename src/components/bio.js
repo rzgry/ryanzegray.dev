@@ -58,7 +58,16 @@ const Bio = () => {
           <span role="img" aria-label="Wave emoji">
             👋
           </span>
-          . I am a Software Developer at IBM currently working on{' '}
+          . I am a Software Developer at IBM currently working on developer
+          experience for{' '}
+          <OutboundLink
+            href="https://openliberty.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Liberty
+          </OutboundLink>
+          . Previously I worked on{' '}
           <OutboundLink
             href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about"
             target="_blank"
