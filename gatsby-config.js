@@ -38,12 +38,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
   ],

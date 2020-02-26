@@ -1,49 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import styled from 'styled-components';
 
-const StyledFooter = styled.footer`
-  text-align: right;
-  background: ${props => props.theme.footerBackground};
-  position: relative;
-  :before {
-    content: '';
-    position: absolute;
-    top: -3rem;
-    height: 3rem;
-    left: 0;
-    right: 0;
-    background: linear-gradient(
-      to bottom right,
-      transparent 49%,
-      ${props => props.theme.footerBackground} 50%
-    );
-  }
+const Footer = styled.footer`
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
 `;
 
 const FooterContainer = styled.div`
-  margin: 0 auto;
-  max-width: ${props => props.theme.maxContentWidth};
-  padding: 0px 1.0875rem 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+  padding: 1em;
 `;
 
-const FooterText = styled.p`
-  color: ${props => props.theme.background};
-  a {
-    box-shadow: inset 0 -2px 0 0 ${props => props.theme.primaryText};
-    color: ${props => props.theme.background};
-  }
-  a:hover {
-    box-shadow: inset 0 -50px 0 0 ${props => props.theme.primaryText};
-    color: ${props => props.theme.background};
-  }
-  margin-top: 0.5rem;
-`;
-
-const Footer = () => (
-  <StyledFooter>
+export default () => (
+  <Footer>
     <FooterContainer>
-      <FooterText>
+      <p>
         &copy; {new Date().getFullYear()}
         {', '}
         <span style={{ whiteSpace: 'nowrap' }}>
@@ -66,9 +42,7 @@ const Footer = () => (
             Styled Components
           </OutboundLink>
         </span>
-      </FooterText>
+      </p>
     </FooterContainer>
-  </StyledFooter>
+  </Footer>
 );
-
-export default Footer;

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const socialLinks = [
@@ -27,23 +26,15 @@ const socialLinks = [
   },
 ];
 
-const SocialListItem = styled.li`
-  display: inline-block;
-  margin-right: 1rem;
-  :last-child {
-    margin-right: 0;
-  }
-`;
-
 const Social = () => (
   <ul>
     {socialLinks.map(({ href, text, ...rest }) => (
-      <SocialListItem key={href}>
+      <li key={href}>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <OutboundLink href={href} {...rest}>
           {text}
         </OutboundLink>
-      </SocialListItem>
+      </li>
     ))}
   </ul>
 );

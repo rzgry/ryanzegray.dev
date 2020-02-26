@@ -2,8 +2,6 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Title from '../components/title';
-import Bio from '../components/bio';
 import Social from '../components/social';
 
 const IndexPage = () => (
@@ -21,8 +19,7 @@ const IndexPage = () => (
         'react',
       ]}
     />
-    <Title>Ryan Zegray</Title>
-    <Bio />
+    <h1>Ryan Zegray</h1>
     <Social />
   </Layout>
 );
