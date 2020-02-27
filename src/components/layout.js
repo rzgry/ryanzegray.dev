@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import Reset from './reset-styles';
+import Reset from './utility/reset-styles';
 import Header from './header';
 import Footer from './footer';
 import siteTheme from '../utils/theme';
