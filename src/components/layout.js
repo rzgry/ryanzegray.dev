@@ -20,6 +20,13 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.highlight};
     text-decoration: none;
+    /* box-shadow: inset 0 -2px 0 0 ${({ theme }) => theme.highlight}; */
+    transition: box-shadow .20s;
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.primaryLight};
+    box-shadow: inset 0 -50px 0 0 ${({ theme }) => theme.highlight};
   }
 
   h1,h2,h3 {

@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Social from '../components/social';
-import Bio from '../components/bio';
+import About from '../components/about';
 
 const IndexPage = () => (
   <Layout>
@@ -20,8 +20,7 @@ const IndexPage = () => (
         'react',
       ]}
     />
-    <Bio />
-    {/* <Social /> */}
+    <About />
   </Layout>
 );
 

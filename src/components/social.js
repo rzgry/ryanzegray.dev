@@ -1,5 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import styled from 'styled-components';
 
 const socialLinks = [
   {
@@ -26,17 +27,32 @@ const socialLinks = [
   },
 ];
 
+const StyledSocial = styled.p`
+  display: flex;
+  /* flex-direction: row-reverse; */
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding-left: 1em;
+  }
+`;
+
 const Social = () => (
-  <ul>
-    {socialLinks.map(({ href, text, ...rest }) => (
-      <li key={href}>
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        <OutboundLink href={href} {...rest}>
-          {text}
-        </OutboundLink>
-      </li>
-    ))}
-  </ul>
+  <StyledSocial>
+    &gt;
+    <ul>
+      {socialLinks.map(({ href, text, ...rest }) => (
+        <li key={href}>
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <OutboundLink href={href} {...rest}>
+            {text}
+          </OutboundLink>
+        </li>
+      ))}
+    </ul>
+  </StyledSocial>
 );
 
 export default Social;
