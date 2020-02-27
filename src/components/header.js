@@ -1,54 +1,71 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Header = styled.header`
-  top: 0;
-  bottom: inherit;
-  left: 0;
+const StyledHeader = styled.header`
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #000000;
-  color: #ffffff;
-`;
+  background-color: ${({ theme }) => theme.headerBackground};
 
-const HeaderContainer = styled.div`
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  padding: 1em;
-`;
+  ul {
+    display: flex;
+    li {
+      margin-left: 2em;
+    }
+  }
 
-const HeaderTitle = styled.a`
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 2em;
-`;
+  nav {
+    padding: 1em;
+    display: flex;
+    max-width: ${({ theme }) => theme.maxContentWidth};
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-const HeaderLinks = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  li {
-    margin: 0.5em;
+  .header-title {
+    font-size: 2em;
+  }
+
+  @media screen and (max-width: 700px) {
+    .header-title {
+      display: none;
+    }
+
+    nav {
+      justify-content: space-around;
+    }
   }
 `;
 
 const HeaderOffset = styled.div`
-  margin-top: 4em;
+  margin-top: 6em;
 `;
 
-export default () => (
-  <>
-    <Header>
-      <HeaderContainer>
-        <HeaderTitle href="#">Ryan Zegray</HeaderTitle>
-        <HeaderLinks>
-          <li>About</li>
-          <li>Projects</li>
-        </HeaderLinks>
-      </HeaderContainer>
-    </Header>
-    <HeaderOffset />
-  </>
-);
+export default () => {
+  return (
+    <>
+      <StyledHeader>
+        <nav>
+          <a className="header-title" href="/">
+            RZ
+          </a>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </StyledHeader>
+      {/* Offset for 'position: fixed' header */}
+      <HeaderOffset />
+    </>
+  );
+};
