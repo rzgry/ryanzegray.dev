@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import Reset from './utility/reset-styles';
+import ResetStyle from './utility/reset-styles';
 import Header from './header';
 import Footer from './footer';
 import siteTheme from '../utils/theme';
@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1,h2,h3 {
+    font-weight: 700;
     color: ${({ theme }) => theme.primaryDark};
   }
 
@@ -45,13 +46,11 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={siteTheme}>
-    <div>
-      <Reset />
-      <GlobalStyle />
-      <Header />
-      <main style={{ minHeight: '100vh' }}>{children}</main>
-      <Footer />
-    </div>
+    <ResetStyle />
+    <GlobalStyle />
+    <Header />
+    <main style={{ minHeight: '100vh' }}>{children}</main>
+    <Footer />
   </ThemeProvider>
 );
 

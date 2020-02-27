@@ -12,7 +12,7 @@ const FooterContainer = styled.div`
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
-  max-width: 1200px;
+  max-width: ${({ theme }) => theme.maxContentWidth};
   padding: 1em;
 `;
 

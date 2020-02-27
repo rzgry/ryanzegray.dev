@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Social from '../components/social';
+import Skills from '../components/skills';
 import About from '../components/about';
 
 const IndexPage = () => (
@@ -21,6 +21,7 @@ const IndexPage = () => (
       ]}
     />
     <About />
+    <Skills />
   </Layout>
 );
 

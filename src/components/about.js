@@ -4,28 +4,20 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Row, Col } from './utility/flex-grid';
 import { Margin, Padding } from './utility/spacing';
 import Social from './social';
+import Section from './utility/section';
 
-const StyledBio = styled.article`
+const StyledBio = styled(Section)`
   padding-top: 6em;
   padding-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  max-width: ${({ theme }) => theme.maxContentWidth};
-  margin: auto;
 
   h1 {
     font-size: 3em;
-    font-weight: 700;
     line-height: 1.5em;
   }
 
   h4 {
     font-size: 1.5em;
     padding-bottom: 0.5em;
-  }
-
-  .desc {
-    padding-top: 2em;
   }
 
   @media screen and (max-width: 700px) {
@@ -70,9 +62,9 @@ export default () => (
           </p>
           <br />
           <p>
-            I am passionate about web technologies, cloud and open source. If
-            you’re interested in working together, or just feel like connecting,{' '}
-            <a href="#contact">let’s get in touch.</a>
+            I am passionate about web technologies, cloud and open source. I am
+            always open to meeting new people so please feel free to get in
+            touch
           </p>
           <Margin top="2em">
             <Social />

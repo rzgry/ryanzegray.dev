@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
   }
 
   nav {
-    padding: 1em;
+    padding: 1.5em;
     display: flex;
     max-width: ${({ theme }) => theme.maxContentWidth};
     margin: auto;
