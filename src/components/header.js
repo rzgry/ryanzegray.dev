@@ -26,6 +26,9 @@ const StyledHeader = styled.header`
 
   .header-title {
     font-size: 2em;
+    /* No box shadow for main title/logo */
+    color: ${({ theme }) => theme.highlight};
+    box-shadow: none;
   }
 
   @media screen and (max-width: 700px) {
@@ -56,10 +59,10 @@ export default () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </nav>

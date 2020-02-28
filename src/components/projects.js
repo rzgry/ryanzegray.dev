@@ -6,7 +6,7 @@ import { Margin } from './utility/spacing';
 import Section from './utility/section';
 import Divider from './utility/divider';
 import MicroProfileLogo from '../images/microprofile.svg';
-import KFServing from '../images/kfserving.png';
+import VoiceAgentImg from '../images/voiceagent.png';
 
 const StyledProjects = styled(Section)`
   padding-top: 5em;
@@ -18,11 +18,11 @@ const StyledProjects = styled(Section)`
   }
 
   h5 {
-    margin-bottom: 1em;
-    font-weight: 600;
+    margin-bottom: 2em;
   }
 
   h6 {
+    font-weight: 600;
     margin-bottom: 1em;
   }
 
@@ -57,9 +57,9 @@ const Tag = styled.span`
 `;
 
 export default () => (
-  <StyledProjects>
+  <StyledProjects id="projects">
     <h2>Projects</h2>
-    <h5>Personal Projects & Open Source Contributions</h5>
+    <h5>Personal / Work Projects & Open Source Contributions</h5>
     <Margin top="1.5em">
       <ReveredRow cols={2} mobileBreakpoint="750px">
         <Col>
@@ -84,6 +84,7 @@ export default () => (
           </p>
           <Margin top="1em">
             <Tag>TypeScript</Tag>
+            <Tag>Node.JS</Tag>
             <Tag>MicroProfile</Tag>
             <Tag>VSCode</Tag>
           </Margin>
@@ -100,29 +101,66 @@ export default () => (
       <Row cols={2} mobileBreakpoint="750px">
         <Col>
           <img
-            src={KFServing}
-            style={{ width: '100%' }}
-            alt="KubeFlow Serving"
+            src={VoiceAgentImg}
+            style={{ width: '80%' }}
+            alt="Voice Agent dashboard"
           />
         </Col>
         <Col>
-          <h6>KFServing</h6>
+          <h6>Voice Agent with Watson Dashboard</h6>
           <p>
-            KFServing provides a Kubernetes Custom Resource Definition for
-            serving machine learning (ML) models on arbitrary frameworks. It
-            aims to solve production model serving use cases by providing
-            performant, high abstraction interfaces for common ML frameworks
-            like Tensorflow, XGBoost, ScikitLearn, PyTorch, and ONNX.
+            Voice Agent with Watson enhances your call center operations by
+            orchestrating Watson services and integrating them with the
+            telephone network. Your voice agent can listen and respond to
+            customers using natural language.
+          </p>
+          <p>
+            <OutboundLink href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about">
+              IBM Cloud Catalog
+            </OutboundLink>
           </p>
           <Margin top="1em">
-            <Tag>Python</Tag>
-            <Tag>Go</Tag>
-            <Tag>Kubernetes</Tag>
-            <Tag>Istio</Tag>
-            <Tag>Knative</Tag>
+            <Tag>JavaScript</Tag>
+            <Tag>ReactJS</Tag>
+            <Tag>NodeJS</Tag>
+            <Tag>HTML</Tag>
+            <Tag>CSS</Tag>
           </Margin>
         </Col>
       </Row>
+      <StyledDivider />
+      <ReveredRow cols={2} mobileBreakpoint="750px">
+        <Col>
+          <h6>Open Liberty dev mode</h6>
+          <p>
+            Open Liberty development mode, or dev mode, allows you to develop
+            applications with any text editor or IDE by providing hot reload and
+            deployment, on demand testing, and debugger support. Your code is
+            automatically compiled and deployed to your running server, making
+            it easy to iterate on your changes. You can run tests on demand or
+            even automatically so that you can get immediate feedback on your
+            changes.
+          </p>
+          <p>
+            <OutboundLink href="https://github.com/openliberty/ci.gradle">
+              GitHub
+            </OutboundLink>
+          </p>
+          <Margin top="1em">
+            <Tag>Java</Tag>
+            <Tag>Gradle</Tag>
+            <Tag>Open Liberty</Tag>
+            <Tag>Groovy</Tag>
+          </Margin>
+        </Col>
+        <Col>
+          <img
+            src={VoiceAgentImg}
+            style={{ width: '80%' }}
+            alt="Voice Agent dashboard"
+          />
+        </Col>
+      </ReveredRow>
     </Margin>
   </StyledProjects>
 );

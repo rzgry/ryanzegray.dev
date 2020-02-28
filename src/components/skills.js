@@ -51,7 +51,7 @@ Skill.propTypes = {
 
 export default () => (
   <SkillsBackground>
-    <StyledSkills>
+    <StyledSkills id="skills">
       <h2>Skills</h2>
       <Margin top="1.5em">
         <Row cols={3} mobileBreakpoint="750px">
@@ -84,7 +84,7 @@ export default () => (
           <Col>
             <Skill
               title="Miscellaneous"
-              skills={['Git', 'Docker', 'Kubernetes', 'Cloud computing']}
+              skills={['Git', 'Docker', 'Cloud computing', 'Agile Development']}
             />
           </Col>
         </Row>

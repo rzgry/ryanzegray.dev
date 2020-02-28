@@ -6,7 +6,7 @@ import { Margin, Padding } from './utility/spacing';
 import Social from './social';
 import Section from './utility/section';
 
-const StyledBio = styled(Section)`
+const StyledAbout = styled(Section)`
   padding-top: 6em;
   padding-bottom: 2em;
 
@@ -26,10 +26,10 @@ const StyledBio = styled(Section)`
 `;
 
 export default () => (
-  <StyledBio>
+  <StyledAbout id="about">
     <Row cols={2}>
       <Col>
-        <h4>Hello, I&#39;m</h4>
+        <h4>Hey, I&#39;m</h4>
         <h1>
           Ryan Zegray{' '}
           <span role="img" aria-label="Wave emoji">
@@ -62,9 +62,8 @@ export default () => (
           </p>
           <br />
           <p>
-            I am passionate about web technologies, cloud and open source. I am
-            always open to meeting new people so please feel free to get in
-            touch
+            I am passionate about web technologies, cloud and open source. I
+            always love to meet new people so please feel free to get in touch
           </p>
           <Margin top="2em">
             <Social />
@@ -72,5 +71,5 @@ export default () => (
         </Padding>
       </Col>
     </Row>
-  </StyledBio>
+  </StyledAbout>
 );

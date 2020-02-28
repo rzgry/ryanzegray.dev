@@ -29,7 +29,6 @@ const socialLinks = [
 
 const StyledSocial = styled.p`
   display: flex;
-  /* flex-direction: row-reverse; */
   ul {
     display: flex;
     flex-wrap: wrap;
