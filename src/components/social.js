@@ -32,6 +32,7 @@ const StyledSocial = styled.p`
   /* flex-direction: row-reverse; */
   ul {
     display: flex;
+    flex-wrap: wrap;
   }
 
   li {

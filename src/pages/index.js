@@ -2,8 +2,9 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Skills from '../components/skills';
 import About from '../components/about';
+import Skills from '../components/skills';
+import Projects from '../components/projects';
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     />
     <About />
     <Skills />
+    <Projects />
   </Layout>
 );
 
