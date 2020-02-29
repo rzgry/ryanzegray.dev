@@ -8,8 +8,21 @@ import Divider from './utility/divider';
 import MicroProfileLogo from '../images/microprofile.svg';
 import VoiceAgentImg from '../images/voiceagent.png';
 
+const tags = {
+  js: 'JavaScript',
+  ts: 'TypeScript',
+  node: 'NodeJS',
+  react: 'ReactJS',
+  mp: 'MicroProfile',
+  vscode: 'VSCode',
+  html: 'HTML',
+  css: 'CSS',
+  java: 'Java',
+  gradle: 'Gradle',
+};
+
 const StyledProjects = styled(Section)`
-  padding-top: 5em;
+  padding-top: 6em;
   padding-bottom: 2em;
 
   h2 {
@@ -30,8 +43,11 @@ const StyledProjects = styled(Section)`
     font-size: 0.9em;
   }
 
-  li {
-    line-height: 2em;
+  ol {
+    display: flex;
+    li {
+      margin-right: 1em;
+    }
   }
 `;
 
@@ -68,25 +84,31 @@ export default () => (
             The MicroProfile Starter extension provides support for generating a
             MicroProfile Java project with examples based on the{' '}
             <OutboundLink href="https://start.microprofile.io/">
-              Eclipse MicroProfile Starter project
-            </OutboundLink>
-            . You are able to generate a project by choosing a MicroProfile
-            version, server and specifications, such as Config, Health, Metrics,
-            and more.
-          </p>
-          <p>
-            <OutboundLink href="https://github.com/MicroShed/mp-starter-vscode-ext">
-              GitHub
+              Eclipse MicroProfile Starter
             </OutboundLink>{' '}
-            <OutboundLink href="https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext">
-              VSMarketplace
-            </OutboundLink>
+            project. You are able to generate a project by choosing a
+            MicroProfile version, server and specifications, such as Config,
+            Health, Metrics, and more.
           </p>
           <Margin top="1em">
-            <Tag>TypeScript</Tag>
-            <Tag>Node.JS</Tag>
-            <Tag>MicroProfile</Tag>
-            <Tag>VSCode</Tag>
+            <ol>
+              <li>
+                <OutboundLink href="https://github.com/MicroShed/mp-starter-vscode-ext">
+                  GitHub
+                </OutboundLink>
+              </li>
+              <li>
+                <OutboundLink href="https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext">
+                  VSMarketplace
+                </OutboundLink>
+              </li>
+            </ol>
+          </Margin>
+          <Margin top="2em">
+            <Tag>{tags.ts}</Tag>
+            <Tag>{tags.node}</Tag>
+            <Tag>{tags.mp}</Tag>
+            <Tag>{tags.vscode}</Tag>
           </Margin>
         </Col>
         <Col>
@@ -114,17 +136,21 @@ export default () => (
             telephone network. Your voice agent can listen and respond to
             customers using natural language.
           </p>
-          <p>
-            <OutboundLink href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about">
-              IBM Cloud Catalog
-            </OutboundLink>
-          </p>
           <Margin top="1em">
-            <Tag>JavaScript</Tag>
-            <Tag>ReactJS</Tag>
-            <Tag>NodeJS</Tag>
-            <Tag>HTML</Tag>
-            <Tag>CSS</Tag>
+            <ol>
+              <li>
+                <OutboundLink href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about">
+                  IBM Cloud
+                </OutboundLink>
+              </li>
+            </ol>
+          </Margin>
+          <Margin top="2em">
+            <Tag>{tags.js}</Tag>
+            <Tag>{tags.react}</Tag>
+            <Tag>{tags.node}</Tag>
+            <Tag>{tags.html}</Tag>
+            <Tag>{tags.css}</Tag>
           </Margin>
         </Col>
       </Row>
@@ -141,16 +167,19 @@ export default () => (
             even automatically so that you can get immediate feedback on your
             changes.
           </p>
-          <p>
-            <OutboundLink href="https://github.com/openliberty/ci.gradle">
-              GitHub
-            </OutboundLink>
-          </p>
           <Margin top="1em">
-            <Tag>Java</Tag>
-            <Tag>Gradle</Tag>
-            <Tag>Open Liberty</Tag>
-            <Tag>Groovy</Tag>
+            <ol>
+              <li>
+                <OutboundLink href="https://github.com/openliberty/ci.gradle">
+                  GitHub
+                </OutboundLink>
+              </li>
+            </ol>
+          </Margin>
+          <Margin top="2em">
+            <Tag>{tags.java}</Tag>
+            <Tag>{tags.gradle}</Tag>
+            <Tag>{tags.mp}</Tag>
           </Margin>
         </Col>
         <Col>

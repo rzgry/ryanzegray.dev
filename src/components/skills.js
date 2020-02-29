@@ -6,8 +6,36 @@ import { Margin } from './utility/spacing';
 import Section from './utility/section';
 
 const SkillsBackground = styled.div`
+  margin-top: 4em;
+  margin-bottom: 4em;
   width: 100%;
   background-color: ${({ theme }) => theme.secondaryLight};
+  padding-top: 1em;
+  padding-bottom: 3em;
+  position: relative;
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(2deg);
+    transform-origin: 100% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-2deg);
+    transform-origin: 100%;
+  }
 `;
 
 const StyledSkills = styled(Section)`
@@ -25,7 +53,7 @@ const StyledSkills = styled(Section)`
   }
 
   li {
-    line-height: 2em;
+    line-height: 1.75em;
   }
 
   img {
@@ -59,10 +87,10 @@ export default () => (
             <Skill
               title="Frontend"
               skills={[
-                'HTML',
-                'CSS',
                 'JavaScript (ES6+)',
                 'React.js',
+                'HTML',
+                'CSS',
                 'React Native',
                 'Redux',
               ]}
@@ -84,7 +112,7 @@ export default () => (
           <Col>
             <Skill
               title="Miscellaneous"
-              skills={['Git', 'Docker', 'Cloud computing', 'Agile Development']}
+              skills={['Git', 'Docker', 'Cloud computing', 'Agile development']}
             />
           </Col>
         </Row>

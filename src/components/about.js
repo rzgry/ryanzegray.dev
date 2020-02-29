@@ -17,7 +17,7 @@ const StyledAbout = styled(Section)`
 
   h4 {
     font-size: 1.5em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25em;
   }
 
   @media screen and (max-width: 700px) {
@@ -29,7 +29,7 @@ export default () => (
   <StyledAbout id="about">
     <Row cols={2}>
       <Col>
-        <h4>Hey, I&#39;m</h4>
+        <h4>Hi, I&#39;m</h4>
         <h1>
           Ryan Zegray{' '}
           <span role="img" aria-label="Wave emoji">
@@ -38,7 +38,7 @@ export default () => (
         </h1>
       </Col>
       <Col>
-        <Padding top="3.5em">
+        <Padding top="3.25em">
           <p>
             I am a Software Developer from Toronto, Canada. Currently I work at
             IBM working on developer experience for{' '}

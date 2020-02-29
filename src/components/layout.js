@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.highlight};
     text-decoration: none;
     transition: box-shadow .20s;
+    box-shadow: inset 0 -1px 0 0 ${({ theme }) => theme.highlight};
   }
 
   a:hover {
