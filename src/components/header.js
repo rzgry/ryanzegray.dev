@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   left: 0;
   width: 100%;
   background-color: ${({ theme }) => theme.headerBackground};
-
+  z-index: 100;
   ul {
     display: flex;
     li {

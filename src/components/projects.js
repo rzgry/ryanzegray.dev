@@ -5,8 +5,9 @@ import { Row, Col } from './utility/flex-grid';
 import { Margin } from './utility/spacing';
 import Section from './utility/section';
 import Divider from './utility/divider';
-import MicroProfileLogo from '../images/microprofile.svg';
+import MicroProfileImg from '../images/microprofile.png';
 import VoiceAgentImg from '../images/voiceagent.png';
+import LibertyDevImg from '../images/openlibertydev.png';
 
 const tags = {
   js: 'JavaScript',
@@ -27,11 +28,11 @@ const StyledProjects = styled(Section)`
 
   h2 {
     font-size: 2.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   h5 {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 
   h6 {
@@ -48,6 +49,11 @@ const StyledProjects = styled(Section)`
     li {
       margin-right: 1em;
     }
+  }
+
+  img {
+    box-shadow: 0 3px 4px 0 hsla(0, 0%, 0%, 0.2);
+    width: 85%;
   }
 `;
 
@@ -75,7 +81,7 @@ const Tag = styled.span`
 export default () => (
   <StyledProjects id="projects">
     <h2>Projects</h2>
-    <h5>Personal / Work Projects & Open Source Contributions</h5>
+    <h5>Projects & Open Source Contributions</h5>
     <Margin top="1.5em">
       <ReveredRow cols={2} mobileBreakpoint="750px">
         <Col>
@@ -112,21 +118,13 @@ export default () => (
           </Margin>
         </Col>
         <Col>
-          <img
-            style={{ width: '100%', maxWidth: '200px' }}
-            src={MicroProfileLogo}
-            alt="Eclipse MicroProfile logo"
-          />
+          <img src={MicroProfileImg} alt="Eclipse MicroProfile logo" />
         </Col>
       </ReveredRow>
       <StyledDivider />
       <Row cols={2} mobileBreakpoint="750px">
         <Col>
-          <img
-            src={VoiceAgentImg}
-            style={{ width: '80%' }}
-            alt="Voice Agent dashboard"
-          />
+          <img src={VoiceAgentImg} alt="Voice Agent dashboard" />
         </Col>
         <Col>
           <h6>Voice Agent with Watson Dashboard</h6>
@@ -174,6 +172,11 @@ export default () => (
                   GitHub
                 </OutboundLink>
               </li>
+              <li>
+                <OutboundLink href="https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html">
+                  Blog Post
+                </OutboundLink>
+              </li>
             </ol>
           </Margin>
           <Margin top="2em">
@@ -183,11 +186,7 @@ export default () => (
           </Margin>
         </Col>
         <Col>
-          <img
-            src={VoiceAgentImg}
-            style={{ width: '80%' }}
-            alt="Voice Agent dashboard"
-          />
+          <img src={LibertyDevImg} alt="Voice Agent dashboard" />
         </Col>
       </ReveredRow>
     </Margin>
