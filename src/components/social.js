@@ -2,7 +2,7 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import styled from 'styled-components';
 
-const socialLinks = [
+export const socialLinks = [
   {
     text: 'Email',
     href: 'mailto:ryan.zegray@gmail.com',

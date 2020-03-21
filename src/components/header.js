@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   z-index: 100;
   ul {
     display: flex;
-    li {
+    li:not(:first-child) {
       margin-left: 2em;
     }
   }
@@ -56,6 +56,7 @@ export default () => {
           </a>
           <ul>
             <li>
+              {/* TODO: Smooth scroll to section instead of using fragment */}
               <a href="#about">About</a>
             </li>
             <li>

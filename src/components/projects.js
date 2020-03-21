@@ -8,12 +8,13 @@ import Divider from './utility/divider';
 import MicroProfileImg from '../images/microprofile.png';
 import VoiceAgentImg from '../images/voiceagent.png';
 import LibertyDevImg from '../images/openlibertydev.png';
+import Tags from './utility/tags';
 
 const tags = {
   js: 'JavaScript',
   ts: 'TypeScript',
-  node: 'NodeJS',
-  react: 'ReactJS',
+  node: 'Node.js',
+  react: 'React.js',
   mp: 'MicroProfile',
   vscode: 'VSCode',
   html: 'HTML',
@@ -67,17 +68,6 @@ const ReveredRow = styled(Row)`
   }
 `;
 
-const Tag = styled.span`
-  background-color: ${({ theme }) => theme.secondaryDark};
-  color: ${({ theme }) => theme.primaryLight};
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1;
-  border-radius: 4px;
-  padding: 6px 8px;
-  margin-right: 4px;
-`;
-
 export default () => (
   <StyledProjects id="projects">
     <h2>Projects</h2>
@@ -111,10 +101,7 @@ export default () => (
             </ol>
           </Margin>
           <Margin top="2em">
-            <Tag>{tags.ts}</Tag>
-            <Tag>{tags.node}</Tag>
-            <Tag>{tags.mp}</Tag>
-            <Tag>{tags.vscode}</Tag>
+            <Tags tags={[tags.ts, tags.node, tags.mp, tags.vscode]} />
           </Margin>
         </Col>
         <Col>
@@ -144,11 +131,9 @@ export default () => (
             </ol>
           </Margin>
           <Margin top="2em">
-            <Tag>{tags.js}</Tag>
-            <Tag>{tags.react}</Tag>
-            <Tag>{tags.node}</Tag>
-            <Tag>{tags.html}</Tag>
-            <Tag>{tags.css}</Tag>
+            <Tags
+              tags={[tags.js, tags.react, tags.node, tags.html, tags.css]}
+            />
           </Margin>
         </Col>
       </Row>
@@ -180,9 +165,7 @@ export default () => (
             </ol>
           </Margin>
           <Margin top="2em">
-            <Tag>{tags.java}</Tag>
-            <Tag>{tags.gradle}</Tag>
-            <Tag>{tags.mp}</Tag>
+            <Tags tags={[tags.java, tags.gradle, tags.mp]} />
           </Margin>
         </Col>
         <Col>
