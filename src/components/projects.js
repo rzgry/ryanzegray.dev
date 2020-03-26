@@ -56,6 +56,12 @@ const StyledProjects = styled(Section)`
     box-shadow: 0 3px 4px 0 hsla(0, 0%, 0%, 0.2);
     width: 85%;
   }
+
+  @media (max-width: 750px) {
+    h6 {
+      margin-top: 1.5em;
+    }
+  }
 `;
 
 const StyledDivider = styled(Divider)`
@@ -79,7 +85,11 @@ export default () => (
           <p>
             The MicroProfile Starter extension provides support for generating a
             MicroProfile Java project with examples based on the{' '}
-            <OutboundLink href="https://start.microprofile.io/">
+            <OutboundLink
+              href="https://start.microprofile.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Eclipse MicroProfile Starter
             </OutboundLink>{' '}
             project. You are able to generate a project by choosing a
@@ -89,12 +99,20 @@ export default () => (
           <Margin top="1em">
             <ol>
               <li>
-                <OutboundLink href="https://github.com/MicroShed/mp-starter-vscode-ext">
+                <OutboundLink
+                  href="https://github.com/MicroShed/mp-starter-vscode-ext"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </OutboundLink>
               </li>
               <li>
-                <OutboundLink href="https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext">
+                <OutboundLink
+                  href="https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   VSMarketplace
                 </OutboundLink>
               </li>
@@ -124,7 +142,11 @@ export default () => (
           <Margin top="1em">
             <ol>
               <li>
-                <OutboundLink href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about">
+                <OutboundLink
+                  href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   IBM Cloud
                 </OutboundLink>
               </li>
@@ -153,12 +175,20 @@ export default () => (
           <Margin top="1em">
             <ol>
               <li>
-                <OutboundLink href="https://github.com/openliberty/ci.gradle">
+                <OutboundLink
+                  href="https://github.com/openliberty/ci.gradle"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </OutboundLink>
               </li>
               <li>
-                <OutboundLink href="https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html">
+                <OutboundLink
+                  href="https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Blog Post
                 </OutboundLink>
               </li>

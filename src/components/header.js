@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollToAnchorLink from './utility/scroll-to-anchor-link';
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -56,14 +57,13 @@ export default () => {
           </a>
           <ul>
             <li>
-              {/* TODO: Smooth scroll to section instead of using fragment */}
-              <a href="#about">About</a>
+              <ScrollToAnchorLink targetElementId="about" text="About" />
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <ScrollToAnchorLink targetElementId="skills" text="Skills" />
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <ScrollToAnchorLink targetElementId="projects" text="Projects" />
             </li>
           </ul>
         </nav>
