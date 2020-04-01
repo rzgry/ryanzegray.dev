@@ -63,7 +63,7 @@ export default () => (
           <br />
           <p>
             I am passionate about web technologies, cloud and open source. I
-            always love to meet new people so please feel free to get in touch
+            always love to meet new people so please feel free to get in touch.
           </p>
           <Margin top="2em">
             <Social />
