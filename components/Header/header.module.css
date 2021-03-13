@@ -1,0 +1,44 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-light);
+  z-index: 100;
+}
+
+.nav {
+  padding: 1.5em;
+  display: flex;
+  max-width: var(--max-content-width);
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.navItems {
+  display: flex;
+}
+
+.navItem:not(:first-child) {
+    margin-left: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+  .nav {
+    justify-content: space-around;
+  }
+}
+
+.headerOffset {
+  margin-top: 2em;
+}

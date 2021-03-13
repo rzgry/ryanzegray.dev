@@ -1,0 +1,9 @@
+.socialListContainer {
+  display: flex;
+  margin-top: 2em;
+}
+
+.socialListItem {
+  display: inline-block;
+  padding-left: 1em;
+}
