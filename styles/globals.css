@@ -41,7 +41,45 @@ h6 {
   color: var(--secondary-dark);
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
 p {
   color: var(--secondary-dark);
   line-height: 2em;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.reversed-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.col {
+  width: 100%;
+}
+
+@media screen and (max-width: 922px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .reversed-row {
+    flex-direction: column;
+  }
 }

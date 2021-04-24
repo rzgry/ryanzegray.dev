@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 5em;
+  width: 100%;
+  padding-top: 2em;
+}
+
+.footer p {
+  text-align: center;
+}
+.footer div {
+  margin: auto;
+  max-width: var(--max-content-width);
+  padding: 1em;
+}

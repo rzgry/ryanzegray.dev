@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
-import Header from '../components/Header';
 
 import '../styles/reset.css';
 import '../styles/globals.css';
@@ -12,12 +11,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     smoothscroll.polyfill();
   }, []);
-  return (
-    <>
-      <Header />
-      <Component {...pageProps} />
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

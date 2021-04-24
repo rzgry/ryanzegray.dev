@@ -8,17 +8,17 @@ export default function About() {
   return (
     <Container id="about">
       <div className={styles.about}>
-        <div className={styles.row}>
-          <div className={styles.col}>
+        <div className="row">
+          <div className="col">
             <h4 className={styles.introText}>Hi, I&#39;m</h4>
-            <h1 className={styles.name}>
+            <h1>
               Ryan Zegray{' '}
               <span role="img" aria-label="Wave emoji">
                 👋
               </span>
             </h1>
           </div>
-          <div className={cn(styles.col, styles.description)}>
+          <div className={cn('col', styles.description)}>
             <p>
               I am a Software Engineer from Toronto, Canada. Currently I work at{' '}
               <a

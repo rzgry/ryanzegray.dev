@@ -1,0 +1,50 @@
+.skillsBackground {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 100%;
+  background-color: var(--secondary-light);
+  padding-top: 1em;
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.skillsBackground:before,
+.skillsBackground:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.skillsBackground:before {
+  top: 0;
+  transform: skewY(2deg);
+  transform-origin: 100% 0;
+}
+
+.skillsBackground:after {
+  bottom: 0;
+  transform: skewY(-2deg);
+  transform-origin: 100%;
+}
+
+.skills {
+  padding-top: 5em;
+}
+
+.skillsColumn {
+  margin-top: 2em;
+}
+
+.subheader {
+  margin-bottom: 1em;
+}
+
+
+.skillItem {
+  line-height: 1.75em;
+}

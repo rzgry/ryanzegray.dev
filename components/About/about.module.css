@@ -1,10 +1,4 @@
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.col {
-  width: 100%;
-}
+
 
 .about {
   padding-top: 10em;
@@ -17,10 +11,6 @@
 
 
 @media screen and (max-width: 992px) {
-  .row {
-    flex-direction: column;
-  }
-
   .about {
     padding-top: 4em;
   }
@@ -29,9 +19,4 @@
 .introText {
   font-size: 1.5em;
   padding-bottom: 0.25em;
-}
-
-.name {
-  font-size: 3em;
-  line-height: 1.5em;
 }

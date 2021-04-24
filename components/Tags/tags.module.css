@@ -1,0 +1,18 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.tags li {
+  background-color: var(--secondary-dark);
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin-right: 4px;
+  margin-bottom: 0.5em;
+}

@@ -19,7 +19,7 @@ const ScrollToAnchorLink = ({ targetElementId, text }) => {
     <a
       href={`#${targetElementId}`}
       onClick={handleClick}
-      ariaLabel={`Scroll to ${targetElementId}`}
+      aria-label={`Scroll to ${targetElementId}`}
     >
       {text}
     </a>

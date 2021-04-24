@@ -3,3 +3,9 @@
   max-width: var(--max-content-width);
   margin: auto;
 }
+
+@media screen and (max-width: 922px) {
+  .container {
+    padding: 1em 2em 1em 2em;
+  }
+}
