@@ -176,13 +176,11 @@ export default function Projects() {
         title="Open Liberty dev mode"
         body={
           <>
-            Open Liberty development mode, or dev mode, allows you to develop
-            applications with any text editor or IDE by providing hot reload and
-            deployment, on demand testing, and debugger support. Your code is
-            automatically compiled and deployed to your running server, making
-            it easy to iterate on your changes. You can run tests on demand or
-            even automatically so that you can get immediate feedback on your
-            changes.
+            Open Liberty development mode allows you to develop applications
+            with any text editor or IDE by providing hot reload and deployment,
+            on demand testing, and debugger support. Your code is automatically
+            compiled and deployed to your running server, making it easy to
+            iterate on your changes.
           </>
         }
         links={[

@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './tags.module.css';
 
 const Tags = ({ tags }) => (
-  <ul className={styles.tags}>
+  <ul className="flex flex-wrap mt-8 mb-8">
     {tags.map((tag) => (
-      <li key={tag}>{tag}</li>
+      <li
+        key={tag}
+        className="bg-secondary-dark text-primary-light text-xs font-medium leading-4 rounded px-2 py-1 mr-1 mb-2"
+      >
+        {tag}
+      </li>
     ))}
   </ul>
 );
