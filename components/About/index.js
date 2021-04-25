@@ -1,16 +1,14 @@
 import React from 'react';
-import styles from './about.module.css';
 import Container from '../Container';
-import cn from 'classnames';
 import Social from '../Social';
 
 export default function About() {
   return (
     <Container id="about">
-      <div className={styles.about}>
-        <div className="row">
-          <div className="col">
-            <h4 className={styles.introText}>Hi, I&#39;m</h4>
+      <div className="pt-10 md:pt-40 pb-8">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full">
+            <h4 className="text-2xl">Hi, I&#39;m</h4>
             <h1>
               Ryan Zegray{' '}
               <span role="img" aria-label="Wave emoji">
@@ -18,7 +16,7 @@ export default function About() {
               </span>
             </h1>
           </div>
-          <div className={cn('col', styles.description)}>
+          <div className="w-full pt-10">
             <p>
               I am a Software Engineer from Toronto, Canada. Currently I work at{' '}
               <a

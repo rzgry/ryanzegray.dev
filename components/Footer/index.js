@@ -1,13 +1,12 @@
 import { socialLinks } from '../Social';
-import styles from './footer.module.css';
 
 // remove codesandbox from footer
 const contactLinks = socialLinks.filter((link) => link.text !== 'CodeSandbox');
 
-export default () => (
-  <footer className={styles.footer}>
-    <div>
-      <p>
+const Footer = () => (
+  <footer className="mt-0 md:mt-20 w-full">
+    <div className="m-auto max-w-screen-lg p-4">
+      <p className="text-center">
         Get in touch:{' '}
         {contactLinks.map(({ href, text, ...rest }) => (
           <>
@@ -17,8 +16,7 @@ export default () => (
             </a>{' '}
           </>
         ))}
-      </p>
-      <p>
+        <br />
         &copy; {new Date().getFullYear()}
         {', '}
         <span style={{ whiteSpace: 'nowrap' }}>
@@ -54,3 +52,5 @@ export default () => (
     </div>
   </footer>
 );
+
+export default Footer;

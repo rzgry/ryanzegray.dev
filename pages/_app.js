@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 import '../styles/reset.css';
+import 'tailwindcss/tailwind.css'
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {

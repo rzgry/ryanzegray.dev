@@ -1,29 +1,28 @@
 import React from 'react';
 import ScrollToAnchorLink from '../ScrollToAnchorLink';
-import styles from './header.module.css';
 
 export default function Header() {
   return (
     <>
-      <div className={styles.navContainer}>
-        <nav className={styles.nav}>
-          <a className={styles.logo} href="/">
+      <div className="fixed top-0 left-0 w-full z-50 bg-white">
+        <nav className="p-4 flex auto max-w-screen-lg m-auto justify-around md:justify-between items-center">
+          <a className="logo" href="/">
             RZ
           </a>
-          <ul className={styles.navItems}>
-            <li className={styles.navItem}>
+          <ul className="flex">
+            <li>
               <ScrollToAnchorLink targetElementId="about" text="About" />
             </li>
-            <li className={styles.navItem}>
+            <li className="ml-8">
               <ScrollToAnchorLink targetElementId="skills" text="Skills" />
             </li>
-            <li className={styles.navItem}>
+            <li className="ml-8">
               <ScrollToAnchorLink targetElementId="projects" text="Projects" />
             </li>
           </ul>
         </nav>
       </div>
-      <div className={styles.headerOffset} />
+      <div className="mt-8" />
     </>
   );
 }

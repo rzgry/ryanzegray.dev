@@ -31,20 +31,3 @@
   transform: skewY(-2deg);
   transform-origin: 100%;
 }
-
-.skills {
-  padding-top: 5em;
-}
-
-.skillsColumn {
-  margin-top: 2em;
-}
-
-.subheader {
-  margin-bottom: 1em;
-}
-
-
-.skillItem {
-  line-height: 1.75em;
-}

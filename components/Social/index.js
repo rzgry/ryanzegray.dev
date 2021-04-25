@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './social.module.css';
 
 export const socialLinks = [
   {
@@ -28,11 +27,11 @@ export const socialLinks = [
 
 export default function index() {
   return (
-    <p className={styles.socialListContainer}>
+    <p className="flex mt-8">
       &gt;{' '}
       <ul>
         {socialLinks.map(({ href, text, ...rest }) => (
-          <li className={styles.socialListItem} key={href}>
+          <li className="inline-block pl-4" key={href}>
             <a href={href} {...rest}>
               {text}
             </a>

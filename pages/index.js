@@ -10,7 +10,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Ryan Zegray</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <main>
