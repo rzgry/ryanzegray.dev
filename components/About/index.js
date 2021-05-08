@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="w-full pt-10">
             <p>
-              I am a Software Engineer from Toronto, Canada. Currently I work at{' '}
+              I am a software engineer from Toronto, Canada. Currently I work at{' '}
               <a
                 href="https://www.dooly.ai/"
                 target="_blank"
@@ -27,15 +27,15 @@ export default function About() {
                 Dooly
               </a>{' '}
               as a full stack software engineer. Previously I worked at IBM
-              working on{' '}
+              Cloud working on Voice Agent with Watson (Now integrated into{' '}
               <a
-                href="https://cloud.ibm.com/catalog/services/voice-agent-with-watson#about"
+                href="https://community.ibm.com/community/user/watsonapps/blogs/mitch-mason1/2021/02/08/announcing-voice-agent-with-watson-deprecation"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voice Agent with Watson
-              </a>{' '}
-              for IBM Cloud and developer experience for{' '}
+                Watson Assistant
+              </a>
+              ) and developer experience for{' '}
               <a
                 href="https://openliberty.io"
                 target="_blank"

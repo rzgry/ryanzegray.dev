@@ -149,13 +149,13 @@ export default function Projects() {
         title="Voice Agent with Watson Dashboard"
         body={
           <>
-            Voice Agent with Watson (Deprecated and now part of the{' '}
+            Voice Agent with Watson (Now deprecated and built into{' '}
             <a
               href="https://community.ibm.com/community/user/watsonapps/blogs/mitch-mason1/2021/02/08/announcing-voice-agent-with-watson-deprecation"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Watson Assistant phone integration
+              Watson Assistant
             </a>
             ) enhances your call center operations by orchestrating Watson
             services and integrating them with the telephone network. Your voice
@@ -199,7 +199,7 @@ export default function Projects() {
               'https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html',
           },
         ]}
-        tags={[tags.ts, tags.node, tags.mp, tags.vscode]}
+        tags={[tags.java, tags.gradle, tags.mp]}
         flipped
       />
     </Container>
