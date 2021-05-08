@@ -1,3 +1,4 @@
+import React from 'react';
 import { socialLinks } from '../Social';
 
 // remove codesandbox from footer
@@ -9,12 +10,12 @@ const Footer = () => (
       <p className="text-center">
         Get in touch:{' '}
         {contactLinks.map(({ href, text, ...rest }) => (
-          <>
+          <React.Fragment key={text}>
             {/* eslint-disable-next-line react/jsx-props-no-spreading  */}
             <a href={href} {...rest}>
               {text}
             </a>{' '}
-          </>
+          </React.Fragment>
         ))}
         <br />
         &copy; {new Date().getFullYear()}
@@ -30,21 +31,21 @@ const Footer = () => (
           </a>
           ,{' '}
           <a
-            href="https://www.gatsbyjs.org"
+            href="https://nextjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Gatsby
+            Next
           </a>
         </span>{' '}
         <span style={{ whiteSpace: 'nowrap' }}>
           and{' '}
           <a
-            href="https://www.styled-components.com/"
+            href="https://tailwindcss.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Styled Components
+            Tailwind
           </a>
           .
         </span>

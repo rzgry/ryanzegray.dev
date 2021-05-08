@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './projects.module.css';
 import Image from 'next/image';
 import cn from 'classnames';
 
@@ -29,7 +28,7 @@ function Project({ img, title, body, links, tags, flipped }) {
       )}
     >
       <div className="w-full">
-        <div className={cn(styles.projectImg, 'md:mr-8')}>
+        <div className="shadow-lg md:mr-8">
           <Image
             src={img.src}
             width={img.width}
@@ -45,7 +44,7 @@ function Project({ img, title, body, links, tags, flipped }) {
           <p className="text-sm leading-6">{body}</p>
           <ul className="flex mt-4">
             {links?.map((link) => (
-              <li className="mr-4">
+              <li className="mr-3" key={link.name}>
                 <a href={link.href} target="_blank" rel="noopener noreferrer">
                   {link.name}
                 </a>
@@ -68,7 +67,7 @@ export default function Projects() {
         img={{
           src: '/images/tools-for-microprofile.png',
           width: 1200,
-          height: 648,
+          height: 640,
           alt: 'Tools for MicroProfile on VS Marketplace',
         }}
         title="Eclipse LSP4MP + Tools for MicroProfile"
@@ -105,7 +104,7 @@ export default function Projects() {
         img={{
           src: '/images/microprofile-starter.png',
           width: 1200,
-          height: 648,
+          height: 642,
           alt: 'MicroProfile Starter on VS Marketplace',
         }}
         title="MicroProfile Starter VSCode Extension"
@@ -144,17 +143,23 @@ export default function Projects() {
         img={{
           src: '/images/voiceagent.png',
           width: 1200,
-          height: 648,
+          height: 624,
           alt: 'Voice Agent with Watson',
         }}
         title="Voice Agent with Watson Dashboard"
         body={
           <>
-            Voice Agent with Watson (now part of the Watson Assistant phone
-            integration) enhances your call center operations by orchestrating
-            Watson services and integrating them with the telephone network.
-            Your voice agent can listen and respond to customers using natural
-            language.
+            Voice Agent with Watson (Deprecated and now part of the{' '}
+            <a
+              href="https://community.ibm.com/community/user/watsonapps/blogs/mitch-mason1/2021/02/08/announcing-voice-agent-with-watson-deprecation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watson Assistant phone integration
+            </a>
+            ) enhances your call center operations by orchestrating Watson
+            services and integrating them with the telephone network. Your voice
+            agent can listen and respond to customers using natural language.
           </>
         }
         links={[
@@ -170,7 +175,7 @@ export default function Projects() {
         img={{
           src: '/images/openlibertydev.png',
           width: 1200,
-          height: 648,
+          height: 677,
           alt: 'Open Liberty dev Mode',
         }}
         title="Open Liberty dev mode"

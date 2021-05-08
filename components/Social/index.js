@@ -27,7 +27,7 @@ export const socialLinks = [
 
 export default function index() {
   return (
-    <p className="flex mt-8">
+    <span className="flex mt-8">
       &gt;{' '}
       <ul>
         {socialLinks.map(({ href, text, ...rest }) => (
@@ -38,6 +38,6 @@ export default function index() {
           </li>
         ))}
       </ul>
-    </p>
+    </span>
   );
 }
