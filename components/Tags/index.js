@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Tags = ({ tags }) => (
-  <ul className="flex flex-wrap mt-8 mb-8">
+  <ul className="flex flex-wrap mt-6 md:mt-8 mb-2">
     {tags.map((tag) => (
       <li
         key={tag}

@@ -28,7 +28,7 @@ function Project({ img, title, body, links, tags, flipped }) {
       )}
     >
       <div className="w-full">
-        <div className="shadow-lg md:mr-8">
+        <div className="shadow-lg md:mr-8 mb-6 md:mb-0">
           <Image
             src={img.src}
             width={img.width}
