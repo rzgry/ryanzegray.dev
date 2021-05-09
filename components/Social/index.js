@@ -31,7 +31,7 @@ export default function index() {
       &gt;{' '}
       <ul>
         {socialLinks.map(({ href, text, ...rest }) => (
-          <li className="inline-block pl-4" key={href}>
+          <li className="inline-block pl-4 mb-2" key={href}>
             <a href={href} {...rest}>
               {text}
             </a>
