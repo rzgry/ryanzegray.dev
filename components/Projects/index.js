@@ -93,8 +93,7 @@ export default function Projects() {
           },
           {
             name: 'VSMarketplace',
-            href:
-              'https://marketplace.visualstudio.com/items?itemName=redhat.vscode-microprofile',
+            href: 'https://marketplace.visualstudio.com/items?itemName=redhat.vscode-microprofile',
           },
         ]}
         tags={[tags.ts, tags.node, tags.mp, tags.vscode, tags.java]}
@@ -131,8 +130,7 @@ export default function Projects() {
           },
           {
             name: 'VSMarketplace',
-            href:
-              'https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext',
+            href: 'https://marketplace.visualstudio.com/items?itemName=MicroProfile-Community.mp-starter-vscode-ext',
           },
         ]}
         tags={[tags.ts, tags.node, tags.mp, tags.vscode]}
@@ -195,8 +193,7 @@ export default function Projects() {
           },
           {
             name: 'Blog Post',
-            href:
-              'https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html',
+            href: 'https://openliberty.io/blog/2020/03/11/gradle-dev-mode-open-liberty.html',
           },
         ]}
         tags={[tags.java, tags.gradle, tags.mp]}

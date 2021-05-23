@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" type="image/png" href="/favicon.png" />
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
         </Head>
         <body>
           <Main />
