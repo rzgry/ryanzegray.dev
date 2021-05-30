@@ -26,16 +26,16 @@ export default function About() {
               >
                 Dooly
               </a>{' '}
-              as a full stack software engineer. Previously I worked at IBM
-              Cloud working on Voice Agent with Watson (Now part of{' '}
+              as a full stack software engineer. Previously I worked on Voice
+              Agent with Watson for{' '}
               <a
-                href="https://community.ibm.com/community/user/watsonapps/blogs/mitch-mason1/2021/02/08/announcing-voice-agent-with-watson-deprecation"
+                href="https://cloud.ibm.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Watson Assistant
-              </a>
-              ) and developer experience for{' '}
+                IBM Cloud
+              </a>{' '}
+              and developer experience for{' '}
               <a
                 href="https://openliberty.io"
                 target="_blank"

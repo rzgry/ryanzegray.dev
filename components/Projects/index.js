@@ -147,7 +147,7 @@ export default function Projects() {
         title="Voice Agent with Watson Dashboard"
         body={
           <>
-            Voice Agent with Watson (Now deprecated and built into{' '}
+            Voice Agent with Watson (Now part of{' '}
             <a
               href="https://community.ibm.com/community/user/watsonapps/blogs/mitch-mason1/2021/02/08/announcing-voice-agent-with-watson-deprecation"
               target="_blank"
