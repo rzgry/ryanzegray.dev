@@ -4,6 +4,11 @@ import Project from './Project';
 import Container from '../Container';
 import Divider from '../Divider';
 
+import ToolsForMPImg from '../../public/images/tools-for-microprofile.png';
+import MPStarterImg from '../../public/images/microprofile-starter.png';
+import VAImg from '../../public/images/voiceagent.png';
+import OLDevImg from '../../public/images/openlibertydev.png';
+
 const tags = {
   js: 'JavaScript',
   ts: 'TypeScript',
@@ -24,9 +29,7 @@ export default function Projects() {
       <p className="mt-4 mb-8">Projects & Open Source Contributions</p>
       <Project
         img={{
-          src: '/images/tools-for-microprofile.png',
-          width: 1200,
-          height: 640,
+          src: ToolsForMPImg,
           alt: 'Tools for MicroProfile on VS Marketplace',
         }}
         title="Eclipse LSP4MP + Tools for MicroProfile"
@@ -60,9 +63,7 @@ export default function Projects() {
       <Divider />
       <Project
         img={{
-          src: '/images/microprofile-starter.png',
-          width: 1200,
-          height: 642,
+          src: MPStarterImg,
           alt: 'MicroProfile Starter on VS Marketplace',
         }}
         title="MicroProfile Starter VSCode Extension"
@@ -98,9 +99,7 @@ export default function Projects() {
       <Divider />
       <Project
         img={{
-          src: '/images/voiceagent.png',
-          width: 1200,
-          height: 624,
+          src: VAImg,
           alt: 'Voice Agent with Watson',
         }}
         title="Voice Agent with Watson Dashboard"
@@ -124,9 +123,7 @@ export default function Projects() {
       <Divider />
       <Project
         img={{
-          src: '/images/openlibertydev.png',
-          width: 1200,
-          height: 677,
+          src: OLDevImg,
           alt: 'Open Liberty dev Mode',
         }}
         title="Open Liberty dev mode"

@@ -14,8 +14,7 @@ function Project({ img, title, body, links, tags, flipped }) {
         <div className="shadow-lg md:mr-8 mb-6 md:mb-0">
           <Image
             src={img.src}
-            width={img.width}
-            height={img.height}
+            placeholder="blur"
             layout="responsive"
             alt={img.alt}
           />
