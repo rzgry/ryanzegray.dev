@@ -9,30 +9,25 @@ export default function About() {
       <Container id="skills">
         <div className="pt-20">
           <h2>Skills</h2>
-          <div className="flex flex-row flex-wrap justify-between">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:flex sm:justify-between">
+            <SkillList
+              title="Languages"
+              skills={['JavaScript', 'TypeScript', 'Python', 'Ruby', 'Java']}
+            />
             <SkillList
               title="Frontend"
               skills={[
-                'JavaScript (ES6+)',
-                'TypeScript',
                 'React.js',
                 'Redux',
+                'Next.js',
                 'HTML',
                 'CSS',
                 'React Native',
               ]}
             />
             <SkillList
-              className="mx-0 xs:mx-4"
               title="Backend"
-              skills={[
-                'Node.js',
-                'Express',
-                'Python',
-                'Ruby',
-                'Java',
-                'SQL / NoSQL ',
-              ]}
+              skills={['Node.js', 'Express', 'Rails', 'SQL / NoSQL ']}
             />
             <SkillList
               title="Miscellaneous"
