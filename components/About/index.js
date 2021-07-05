@@ -29,7 +29,7 @@ export default function About() {
               as a full stack software engineer. Previously I worked on Voice
               Agent with Watson for{' '}
               <a
-                href="https://cloud.ibm.com/"
+                href="https://www.ibm.com/cloud"
                 target="_blank"
                 rel="noopener noreferrer"
               >
